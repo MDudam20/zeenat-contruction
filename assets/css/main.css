@@ -2978,7 +2978,7 @@ span {
   position: relative;
   overflow: hidden;
   z-index: 9;
-  padding-top: 190px;
+  padding-top: 120px;
   padding-bottom: 50px;
 }
 @media (max-width: 1199px) {
@@ -5538,7 +5538,7 @@ input.main-search-input::placeholder {
   }
 }
 .project-wrapper .main-box .box {
-  background-image: url(../img/project/01.jpg);
+  background-image: url(../img/zeenat/sangvi2.jpeg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -5607,16 +5607,16 @@ input.main-search-input::placeholder {
   transform: rotate(0);
 }
 .project-wrapper .main-box .box.bg-1 {
-  background-image: url(../img/project/02.jpg);
+  background-image: url(../img/zeenat/interior.jpg);
 }
 .project-wrapper .main-box .box.bg-2 {
-  background-image: url(../img/project/03.jpg);
+  background-image: url(../img/zeenat/road-and-highway-construction-service.jpg);
 }
 .project-wrapper .main-box .box.bg-3 {
-  background-image: url(../img/project/04.jpg);
+  background-image: url(../img/zeenat/Horticulture.jpg);
 }
 .project-wrapper .main-box .box.bg-4 {
-  background-image: url(../img/project/05.jpg);
+  background-image: url(../img/zeenat/Turnkey.webp);
 }
 .project-wrapper .main-box .box.active {
   width: 570px !important;
@@ -5804,7 +5804,7 @@ input.main-search-input::placeholder {
 }
 .project-card-items .project-image img {
   width: 100%;
-  height: 100%;
+  height: 500px;
   transition: 0.5s;
   background-size: cover;
 }
@@ -7531,4 +7531,17 @@ border-color: var(--theme);
     background: var(--theme);
     padding: 10px;
     left: 10px;
+}
+.project-gallery {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.project-gallery img,
+.project-gallery video{
+    width: 100%;
+    height: 400px; /* same height for all images */
+    object-fit: cover; /* image crop hoke fill hogi */
+    border-radius: 10px; /* optional design */
+      margin-bottom: 20px;
 }
