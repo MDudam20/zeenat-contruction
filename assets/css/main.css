@@ -6137,14 +6137,15 @@ input.main-search-input::placeholder {
 .service-box-items {
   margin-top: 30px;
   background-color: var(--white);
+  height: 480px;
 }
 .service-box-items .service-thumb {
-  padding: 18px 18px 65px 18px;
+  padding: 18px 18px 27px 18px;
   position: relative;
 }
 .service-box-items .service-thumb img {
   width: 100%;
-  height: 100%;
+  height: 236px;
 }
 .service-box-items .service-thumb .icon {
   position: absolute;
@@ -6170,7 +6171,7 @@ input.main-search-input::placeholder {
   font-weight: 700;
   position: absolute;
   right: 30px;
-  top: -50px;
+  top: 0px;
 }
 .service-box-items .service-content .number:hover {
   -webkit-text-stroke: 1px rgba(245, 91, 31, 0.5);
@@ -6182,9 +6183,9 @@ input.main-search-input::placeholder {
   color: var(--theme);
 }
 .service-box-items .service-content p {
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 20px;
-  margin-bottom: 20px;
+  /* border-bottom: 1px solid var(--border); */
+  /* padding-bottom: 20px;
+  margin-bottom: 20px; */
 }
 .service-box-items:hover .service-content .number {
   -webkit-text-stroke: 1px rgba(245, 91, 31, 0.5);
