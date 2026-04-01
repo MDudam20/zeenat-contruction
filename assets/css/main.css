@@ -1031,7 +1031,7 @@ span {
 }
 .contact-wrapper .contact-items .form-clt input, .contact-wrapper .contact-items .form-clt textarea {
   border: 1px solid var(--theme);
-  background: rgba(245, 91, 31, 0.1);
+  /* background: rgba(245, 91, 31, 0.1); */
   color: var(--theme);
   padding: 16px 20px;
   line-height: 1;
@@ -1107,7 +1107,7 @@ span {
   height: 71px;
   line-height: 71px;
   text-align: center;
-  background-color: var(--white);
+  /* background-color: var(--white); */
   color: var(--theme);
   font-size: 50px;
 }
@@ -1214,7 +1214,7 @@ span {
   }
 }
 .cta-banner-wrapper h2 {
-  font-size: 38px;
+  font-size: 35px;
 }
 @media (max-width: 767px) {
   .cta-banner-wrapper h2 {
@@ -1403,7 +1403,7 @@ span {
 }
 .skills-wrapper .skills-image img {
   width: 100%;
-  height: 100%;
+  height: 370px;
   object-fit: cover;
 }
 .skills-wrapper .skills-image .logo-shape {
@@ -1729,10 +1729,10 @@ span {
 
 .work-process-wrapper-3 .work-process-content .work-process-box {
   background-color: var(--white);
-  padding: 25px 20px;
+  padding: 15px 10px;
   display: flex;
   align-items: end;
-  gap: 70px;
+  gap: 60px;
   position: relative;
 }
 @media (max-width: 1199px) {
@@ -1767,14 +1767,14 @@ span {
   left: 0;
 }
 .work-process-wrapper-3 .work-process-content .work-process-box .shape-img img {
-  width: 100%;
+  width: 70%;
   height: 100%;
 }
 .work-process-wrapper-3 .work-process-content .work-process-box .number {
   -webkit-text-stroke: 1px rgb(255, 255, 255);
   -webkit-text-fill-color: transparent;
   transition: all 0.4s ease-in-out;
-  font-size: 48px;
+  font-size: 35px;
   font-weight: 700;
   position: relative;
   z-index: 1;
@@ -1786,11 +1786,12 @@ span {
   z-index: 9;
 }
 .work-process-wrapper-3 .work-process-content .work-process-box .content h3 {
-  font-size: 24px;
+  font-size: 20px;
 }
 .work-process-wrapper-3 .work-process-content .work-process-box .content p {
   font-weight: 400;
   margin-top: 5px;
+  font-size: 15px;
 }
 .work-process-wrapper-3 .work-process-image .track-image {
   position: relative;
@@ -5529,6 +5530,7 @@ input.main-search-input::placeholder {
   gap: 30px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 @media (max-width: 1199px) {
   .project-wrapper .main-box {
@@ -5610,7 +5612,7 @@ input.main-search-input::placeholder {
   background-image: url(../img/zeenat/interior.jpg);
 }
 .project-wrapper .main-box .box.bg-2 {
-  background-image: url(../img/zeenat/road-and-highway-construction-service.jpg);
+  background-image: url(../img/zeenat/raja.jpeg);
 }
 .project-wrapper .main-box .box.bg-3 {
   background-image: url(../img/zeenat/Horticulture.jpg);
@@ -7300,8 +7302,8 @@ width: 40%;
     position: absolute;
     inset: 0;
     background: linear-gradient(
-        rgba(0, 0, 0, 0.75),
-        rgba(0, 0, 0, 0.55)
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.3)
     );
     z-index: 1;
     transition: background 0.8s ease; /* Smooth overlay transition */
@@ -7544,4 +7546,77 @@ border-color: var(--theme);
     object-fit: cover; /* image crop hoke fill hogi */
     border-radius: 10px; /* optional design */
       margin-bottom: 20px;
+}
+.sticky-btn {
+  position: fixed;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #00c853, #b2ff59); /* gradient for WhatsApp */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.sticky-btn img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Hover Animation */
+.sticky-btn:hover {
+  transform: scale(1.2) rotate(-10deg);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.4);
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.sticky-btn.left {
+  left: 20px;
+  bottom: 20px;
+  background: linear-gradient(135deg, #25d366, #128c7e);
+  animation: bounce 2s infinite;
+}
+
+.sticky-btn.right.top {
+      right: 30px;
+    bottom: 175px;
+  background: linear-gradient(135deg, #ff5722, #ff9800);
+
+}
+
+.sticky-btn.right.bottom {
+     right: 30px;
+    bottom: 107px;
+    background: linear-gradient(135deg, #2196f3, #64b5f6);
+}
+
+/* Responsive Adjustments */
+@media(max-width: 768px){
+  .sticky-btn {
+    width: 50px;
+    height: 50px;
+  }
+
+  .sticky-btn img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .sticky-btn.right.top {
+    bottom: 80px;
+  }
+}
+.brand-image img{
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 3/2;
+  padding: 20px;
 }
